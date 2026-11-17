@@ -1,0 +1,114 @@
+/* css/estilo-base.css */
+/* Estilos comuns a todas as páginas */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg, #ff9a76, #e84393);
+  min-height: 100vh;
+  color: #2d3436;
+}
+
+/* Caixa branca central usada em login e cadastro */
+.container {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 420px;
+  padding: 32px 28px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+  text-align: center;
+  color: #e84393;
+  font-size: 28px;
+}
+
+.subtitulo {
+  text-align: center;
+  color: #636e72;
+  margin: 8px 0 20px;
+}
+
+/* Formulários */
+label {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 14px 0 6px;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  font-size: 15px;
+  border: 2px solid #dfe6e9;
+  border-radius: 8px;
+  transition: border-color 0.2s;
+}
+
+input:focus {
+  outline: none;
+  border-color: #e84393;
+}
+
+/* Botões */
+.botao {
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+  background: linear-gradient(135deg, #fd9644, #e84393);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.botao:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(232, 67, 147, 0.4);
+}
+
+.botao:active {
+  transform: translateY(0);
+}
+
+/* Mensagens de erro e sucesso */
+.mensagem {
+  min-height: 20px;
+  margin-top: 14px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.mensagem.erro {
+  color: #d63031;
+}
+
+/* Link para trocar de página (login <-> cadastro) */
+.link-troca {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.link-troca a {
+  color: #e84393;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.link-troca a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - Match ou Miojo?</title>
+  <link rel="stylesheet" href="css/estilo-base.css">
+  <link rel="stylesheet" href="css/home.css">
+</head>
+<body>
+  <header class="topo">
+    <h1 class="logo-topo">Match ou Miojo?</h1>
+    <div class="area-usuario">
+      <span id="nomeUsuario"></span>
+      <button id="botaoSair" class="botao botao-sair">Sair</button>
+    </div>
+  </header>
+
+  <main class="conteudo">
+    <section class="boas-vindas">
+      <h2 id="saudacao"></h2>
+      <p>Estas pessoas estão disponíveis (ou fingindo que estão). Curta quem te interessar!</p>
+    </section>
+
+    <section id="listaPerfis" class="lista-perfis"></section>
+
+    <p id="avisoCurtida" class="aviso-curtida"></p>
+  </main>
+
+  <script type="module" src="js/home.js"></script>
+</body>
+</html>
